@@ -1,0 +1,13 @@
+[Unit]
+Description=GWQ Node.js Server
+After=network.target
+
+[Service]
+User=matsibora
+Group=matsibora
+WorkingDirectory=/home/matsibora/run/node_server
+ExecStart=/usr/bin/node /home/matsibora/run/node_server/server.js
+
+[Install]
+WantedBy=multi-user.target
+
