@@ -1,0 +1,60 @@
+{
+  "name": "gwq-spa",
+  "version": "0.0.1",
+  "description": "Global Water Quality SPA",
+  "productName": "GWQ web-GIS SPA",
+  "author": "oleksandr <matsibora.alexander@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@geoman-io/leaflet-geoman-free": "^2.14.2",
+    "@quasar/extras": "^1.0.0",
+    "@turf/area": "^6.5.0",
+    "@turf/helpers": "^6.5.0",
+    "axios": "^1.2.1",
+    "core-js": "^3.6.5",
+    "leaflet": "^1.9.3",
+    "leaflet-choropleth": "^1.1.4",
+    "leaflet.markercluster": "^1.5.3",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.filter": "^4.6.0",
+    "lodash.orderby": "^4.6.0",
+    "moment": "^2.29.4",
+    "pinia": "^2.0.11",
+    "proj4": "^2.8.1",
+    "proj4leaflet": "^1.0.2",
+    "quasar": "^2.6.0",
+    "vue": "^3.0.0",
+    "vue-i18n": "^9.0.0",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.13.14",
+    "@quasar/app-webpack": "^3.0.0",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "prettier": "^2.5.1"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
