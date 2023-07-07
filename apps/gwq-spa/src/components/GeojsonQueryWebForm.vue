@@ -402,7 +402,9 @@ function numberFormatted(value) {
 }
 
 function getTempFilesPath(folder, fileExtension) {
-  return `${process.env.serverUrl}/data/sites/${folder}/${fileExtension}`;
+  // return `${process.env.serverUrl}/data/sites/${folder}/${fileExtension}`;
+  return `https://maps.landscape-geoinformatics.org/gwq-spa/#/data/sites/${folder}/${fileExtension}`;
+  
 }
 
 function resetQueries() {
