@@ -1,3 +1,6 @@
+
+![grwq-app](https://github.com/rmcf/gwq/assets/18697688/fb53f741-0086-40f8-ad54-4a65855b32aa)
+
 ## Global Water Quality Web App
 
 Global river water quality application (GRWQ App) is a web-based geographic information system, developed in creative cooperation with Alexander Kmoch and Holger Virro. It is an online tool for visual analysis and spatial data observation of river water quality parameters. GRWQ App is built completely with all advantages of JavaScript (Node.js + Vue.js) and power of SQL (PostgreSQL).
