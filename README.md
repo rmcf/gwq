@@ -1,13 +1,5 @@
 # Global Water Quality Web App
 
-```
-cd dev_dir
-git clone https://gitlab.ut.ee/geog/global-water-quality-web-app.git
-git add filename
-git commit -m "message"
-git push origin master
-```
-
 ## GRQA: Global River Water Quality Archive
 
 Large-scale hydrological studies are often limited by the lack of available observation data with a good spatiotemporal coverage. This has affected the reproducibility of previous studies and the potential improvement of existing hydrological models. In addition to the observation data themselves, insufficient or poor-quality metadata have also discouraged researchers from integrating the already-available datasets. Therefore, improving both the availability and quality of open water quality data would increase the potential to implement predictive modeling on a global scale.
