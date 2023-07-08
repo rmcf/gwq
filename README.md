@@ -1,33 +1,57 @@
-# Global Water Quality Web App
+## Global Water Quality Web App
 
-## GRQA: Global River Water Quality Archive
+Global river water quality application (GRWQ App) is a web-based geographic information system, developed in creative cooperation with Alexander Kmoch and Holger Virro. It is an online tool for visual analysis and spatial data observation of river water quality parameters. GRWQ App is built completely with all advantages of JavaScript (Node.js + Vue.js) and power of SQL (PostgreSQL).
 
-Large-scale hydrological studies are often limited by the lack of available observation data with a good spatiotemporal coverage. This has affected the reproducibility of previous studies and the potential improvement of existing hydrological models. In addition to the observation data themselves, insufficient or poor-quality metadata have also discouraged researchers from integrating the already-available datasets. Therefore, improving both the availability and quality of open water quality data would increase the potential to implement predictive modeling on a global scale.
+# The main purposes of GRWQ App development are:
 
-The Global River Water Quality Archive (GRQA) aims to contribute to improving water quality data coverage by aggregating and harmonizing five national, continental and global datasets: CESI (Canadian Environmental Sustainability Indicators program), GEMStat (Global Freshwater Quality Database), GLORICH (GLObal RIver CHemistry), Waterbase and WQP (Water Quality Portal). The GRQA compilation involved converting observation data from the five sources into a common format and harmonizing the corresponding metadata, flagging outliers, calculating time series characteristics and detecting duplicate observations from sources with a spatial overlap. The final dataset extends the spatial and temporal coverage of previously available water quality data and contains 42 parameters and over 17 million measurements around the globe covering the 1898–2020 time period. Metadata in the form of statistical tables, maps and figures are provided along with observation time series.
+- to create a user-friendly web-application for the observation, visualization and analysis of river water quality parameters
+- to conduct an engineering experiment with efficient integration of different frameworks, libraries, technologies (Vue.js + Leaflet.js + DGGS H3) and implement original logic into a front-end single page application
 
-How to cite the paper: 
+# Details about dataset:
 
-Virro, H., Amatulli, G., Kmoch, A., Shen, L., and Uuemaa, E.: GRQA: Global River Water Quality Archive, Earth Syst. Sci. Data, 13, 5483–5507, https://doi.org/10.5194/essd-13-5483-2021, 2021. 
+- Virro, H., Amatulli, G., Kmoch, A., Shen, L., and Uuemaa, E.: GRQA: Global River Water Quality Archive, Earth Syst. Sci. Data, 13, 5483–5507, 10.5194/essd-13-5483-2021, 2021.
+
+# Only open source frameworks and libraries were used:
+
+- Express.js (Node.js web application framework)
+- Quasar.js (Vue.js based front-end framework)
+- Leaflet.js (library for interactive maps)
+- DGGS H3 (hexagonal geospatial indexing system)
+- Turf.js (advanced geospatial analysis library)
+- Lodash.js (JS utility library)
+
+# The main features of GRWQ App:
+
+- selecting area of interest
+- search for available sites of river water observation in the area
+- saving selected sites to CSV or geoJSON files
+- calculating basic statistic parameters of observation values (min, max, mean, median, etc)
+- selecting among more than 40 water quality parameters from “Biochemical oxygen demand” to “Total suspended solids”
+- selecting available river water quality observations by date range dynamically
+- generated legend for hexagons of the choropleth map
+
+# The most interesting features of GRWQ App:
+
+- integration of Vue.js and Leaflet.js without using “common state” – both libraries work independently
+- usage of all advantages of Composition API and Pinia store in Vue 3
+- implementation of DGGS (Discrete Global Grid Systems) H3 (Hexagonal hierarchical geospatial indexing system) for building the choropleth map on different resolution levels
 
 ## Installation
 
-- npm, node ...
-
+- git clone git@github.com:rmcf/gwq.git
+- yarn install
 
 ## Usage
 
-- Website TBA
-- API and website how-to documentation TODO
+- “how-to guide” video on YouTube: https://youtu.be/pLJTKseKyDo
+- GRWQ App: https://maps.landscape-geoinformatics.org/gwq-spa/
 
 ## Authors and acknowledgment
 
-Oleksandr Matsibora
-Alexander Kmoch
-Holger Virro
+- Oleksandr Matsibora
+- Alexander Kmoch
+- Holger Virro
 
 ## License
 
-code: MIT License 
-
-The GRQA dataset, supplementary metadata and figures are available for download on the DataCite- and OpenAIRE-enabled Zenodo repository at https://doi.org/10.5281/zenodo.5097436 (Virro et al., 2021).
+code: MIT License
